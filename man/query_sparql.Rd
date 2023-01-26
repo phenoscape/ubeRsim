@@ -4,7 +4,7 @@
 \alias{query_sparql}
 \title{Query a SPARQL endpoint}
 \usage{
-query_sparql(sparql_query, endpoint, format)
+query_sparql(sparql_query, endpoint, format = c("simple", "smart"))
 }
 \arguments{
 \item{sparql_query}{character, the SPARQL query}
