@@ -1,7 +1,7 @@
 Package: ubeRsim
 Type: Package
 Title: What the Package Does (Title Case)
-Version: 0.0.1
+Version: 0.0.3
 Authors@R: c(
   person("Hilmar", "Lapp", email = "hilmar.lapp@duke.edu", role = c("cre", "aut"),
          comment = c(ORCID="0000-0001-9107-0714")),
@@ -23,6 +23,8 @@ Imports:
     httr,
     rlang,
     methods,
+    dplyr,
+    purrr,
     stringi
 Suggests: 
     roxygen2,
