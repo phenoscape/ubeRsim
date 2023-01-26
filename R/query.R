@@ -35,7 +35,7 @@ query_sparql <- function(sparql_query, endpoint, format = c("simple", "smart")) 
     httr::stop_for_status(response)
     if (httr::http_type(response) == "text/csv") {
       content <- httr::content(response, as = "text", encoding = "UTF-8")
-      return(readr::read_csv(content))
+      return(readr::read_csv(content, show_col_types = FALSE))
     } else {
       stop("returned response is not formatted as a CSV")
     }
